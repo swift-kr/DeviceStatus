@@ -1,23 +1,20 @@
-//
-//  ViewController.swift
-//  DeviceStatus
-//
-//  Created by MJ Kim on 2016. 5. 2..
-//  Copyright © 2016년 Swifter. All rights reserved.
-//
-
+//--------------------------------------------------
+// 네트워크 연결 여부 상태 체크 함수 테스트뷰
+//--------------------------------------------------
 import UIKit
+import SystemConfiguration
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        print(isReachability("naver.com")) // true면 연결한 상태
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
 
 
